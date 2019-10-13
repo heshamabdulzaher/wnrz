@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  color: #5f697c;
+}
+
+.content-container {
+  padding: 24px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 29px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main-btn {
+  background: #ff4d00;
+  box-shadow: 0px 15px 25px rgba(255, 77, 0, 0.248006);
+  border-radius: 12px;
+  width: 100%;
+  height: 52px;
+  color: #fbfbfb;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#welcome-page {
+  padding-top: 180px;
+  text-align: center;
+}
+#welcome-page .logo {
+  margin-bottom: 48px;
+}
+#welcome-page p {
+  padding: 0 30px;
+}
+#welcome-page button {
+  width: calc(100% - 60px);
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#welcome-page .agree-to-wnrz-term {
+  width: calc(100% - 60px);
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+#welcome-page .agree-to-wnrz-term a {
+  color: #ff4d00;
+  font-weight: bold;
+}
+
+#what-is-your-mobile-number {
+  text-align: center;
+  padding-top: 80px;
+}
+#what-is-your-mobile-number .illustration {
+  max-width: 200px;
+  margin: auto;
+}
+#what-is-your-mobile-number h1 {
+  margin-top: 30px;
+  line-height: 36px;
+}
+#what-is-your-mobile-number .mobile-number-input {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+#what-is-your-mobile-number .mobile-number-input img {
+  border-radius: 6px;
+}
+#what-is-your-mobile-number .mobile-number-input .saudi-number-code {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 6px 0 8px;
+  color: #333;
+}
+#what-is-your-mobile-number .mobile-number-input input {
+  flex: 1;
+  height: 100%;
+  font-size: 20px;
+}
+#what-is-your-mobile-number .mobile-number-input input:focus + .underline::after {
+  animation: underline_active 0.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+#what-is-your-mobile-number .mobile-number-input .underline {
+  width: 100%;
+  height: 2px;
+  background-color: #cbcbcb;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+}
+#what-is-your-mobile-number .mobile-number-input .underline::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff4d00;
+  transform: scaleX(0);
+  transform-origin: 50%;
+}
+@keyframes underline_active {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+#sms-verification {
+  text-align: center;
+  padding-top: 80px;
+}
+#sms-verification .illustration {
+  max-width: 200px;
+  margin: auto;
+}
+#sms-verification h1 {
+  margin-top: 30px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+#sms-verification p {
+  font-size: 18px;
+}
+#sms-verification .sms-verification-code-boxs {
+  padding: 30px 0 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#sms-verification .sms-verification-code-boxs input {
+  background-color: #dfe8f6;
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+#sms-verification a {
+  color: #ff4d00;
+  font-weight: 600;
+}
+
+#introduce-yourself {
+  text-align: center;
+  padding-top: 80px;
+}
+#introduce-yourself .rectangle {
+  width: 150px;
+  height: 150px;
+  background-color: #dfe8f6;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#introduce-yourself h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 36px;
+}
+#introduce-yourself input {
+  border-bottom: 1px solid #cbcbcb;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=styles.css.map */

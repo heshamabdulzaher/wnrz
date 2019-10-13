@@ -1,0 +1,47 @@
+$orangeColor: #ff4d00;
+$darkGrayColor: #5f697c;
+$black333: #333;
+$grayBorder: #cbcbcb;
+
+// GLOBAL STYLING
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  color: $darkGrayColor;
+}
+.content-container {
+  padding: 24px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 29px;
+  color: $black333;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
