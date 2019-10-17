@@ -1,0 +1,90 @@
+section#home {
+  .say-welcome {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .profile-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #dfe8f6;
+      color: #728eba;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  // Tbas
+  .tabs {
+    margin-top: 30px;
+    ul {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+      li {
+        margin-right: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        &.active {
+          color: $orangeColor;
+        }
+      }
+    }
+    .tabs-bar {
+      width: 100%;
+      height: 2px;
+      background-color: #cbcbcb;
+      .active {
+        background-color: $orangeColor;
+        width: 122px;
+        height: 100%;
+      }
+    }
+  }
+
+  // Cards
+  .questions {
+    padding-top: 30px;
+    .card {
+      background-color: #fff;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      .question {
+        display: flex;
+        padding-bottom: 18px;
+        border-bottom: 1px solid $grayBorder;
+        .brand-logo {
+          margin-right: 18px;
+        }
+        .brand-name {
+          font-size: 14px;
+        }
+        h3 {
+          font-weight: bold;
+          font-size: 24px;
+        }
+      }
+      .details {
+        display: flex;
+        align-items: center;
+        padding-top: 12px;
+        justify-content: space-between;
+        > div {
+          p {
+            font-size: 13px;
+            line-height: 18px;
+          }
+          .counter {
+            color: $black333;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

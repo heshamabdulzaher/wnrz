@@ -24,8 +24,12 @@ h1 {
   font-weight: bold;
   font-size: 28px;
   line-height: 29px;
-  color: $black333;
   margin-bottom: 20px;
+}
+h1,
+h2,
+h3 {
+  color: $black333;
 }
 p {
   font-size: 16px;

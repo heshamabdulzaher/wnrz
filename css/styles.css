@@ -19,8 +19,13 @@ h1 {
   font-weight: bold;
   font-size: 28px;
   line-height: 29px;
-  color: #333;
   margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
 }
 
 p {
@@ -209,6 +214,90 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 24px;
   line-height: 28px;
   font-weight: 600;
+}
+
+section#home .say-welcome {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section#home .say-welcome .profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #dfe8f6;
+  color: #728eba;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#home .tabs {
+  margin-top: 30px;
+}
+section#home .tabs ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+section#home .tabs ul li {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+section#home .tabs ul li.active {
+  color: #ff4d00;
+}
+section#home .tabs .tabs-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #cbcbcb;
+}
+section#home .tabs .tabs-bar .active {
+  background-color: #ff4d00;
+  width: 122px;
+  height: 100%;
+}
+section#home .questions {
+  padding-top: 30px;
+}
+section#home .questions .card {
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+}
+section#home .questions .card .question {
+  display: flex;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #cbcbcb;
+}
+section#home .questions .card .question .brand-logo {
+  margin-right: 18px;
+}
+section#home .questions .card .question .brand-name {
+  font-size: 14px;
+}
+section#home .questions .card .question h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+section#home .questions .card .details {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  justify-content: space-between;
+}
+section#home .questions .card .details > div p {
+  font-size: 13px;
+  line-height: 18px;
+}
+section#home .questions .card .details > div .counter {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
