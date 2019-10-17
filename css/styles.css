@@ -339,7 +339,7 @@ section#home .questions .card .details > div .counter {
   font-size: 24px;
   font-weight: normal;
 }
-#question-page .question {
+#question-page > .question {
   font-size: 38px;
   line-height: 46px;
   padding-bottom: 20px;
@@ -366,6 +366,53 @@ section#home .questions .card .details > div .counter {
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
+}
+#question-page .other-questions {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid #cbcbcb;
+}
+#question-page .other-questions h2 {
+  font-size: 28px;
+}
+#question-page .other-questions .questions {
+  padding-top: 30px;
+}
+#question-page .other-questions .questions .card {
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+}
+#question-page .other-questions .questions .card .question {
+  display: flex;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #cbcbcb;
+}
+#question-page .other-questions .questions .card .question .brand-logo {
+  margin-right: 18px;
+}
+#question-page .other-questions .questions .card .question .brand-name {
+  font-size: 14px;
+}
+#question-page .other-questions .questions .card .question h3 {
+  font-weight: bold;
+  font-size: 24px;
+}
+#question-page .other-questions .questions .card .details {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  justify-content: space-between;
+}
+#question-page .other-questions .questions .card .details > div p {
+  font-size: 13px;
+  line-height: 18px;
+}
+#question-page .other-questions .questions .card .details > div .counter {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
