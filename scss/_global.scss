@@ -2,6 +2,7 @@ $orangeColor: #ff4d00;
 $darkGrayColor: #5f697c;
 $black333: #333;
 $grayBorder: #cbcbcb;
+$shipCoveColor: #728eba;
 
 // GLOBAL STYLING
 * {
@@ -18,6 +19,8 @@ body {
 }
 .content-container {
   padding: 24px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 h1 {
