@@ -370,13 +370,20 @@ section#home .questions .card .details > div .counter {
   font-size: 24px;
   font-weight: normal;
 }
-#question-page > .question {
+#question-page #question h1 {
   font-size: 38px;
   line-height: 46px;
   padding-bottom: 20px;
   border-bottom: 1px solid #cbcbcb;
+  position: relative;
 }
-#question-page .answers li {
+#question-page #question h1 span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+#question-page #question .answers li {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 40px;
   margin-bottom: 15px;
@@ -384,13 +391,47 @@ section#home .questions .card .details > div .counter {
   font-weight: bold;
   font-size: 24px;
   color: #333;
+  position: relative;
 }
-#question-page .answers li.selected {
+#question-page #question .answers li::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+#question-page #question .answers li.selected {
   background-color: #333;
   color: #fff;
 }
+#question-page #question .answers li.selected.correct-answer {
+  background-color: #6ED300;
+  color: #fff;
+  border: 0 !important;
+}
+#question-page #question .answers li.selected.correct-answer::after {
+  content: "Correct!";
+  color: #376802;
+}
+#question-page #question .answers li.selected.wrong-answer {
+  background-color: #FF2943;
+  color: #fff;
+}
+#question-page #question .answers li.selected.wrong-answer::after {
+  content: "Wrong!";
+  color: #630914;
+}
+#question-page #question .answers li.correct-answer {
+  border: 1px solid #6ED300;
+}
+#question-page #question .answers li.disabled {
+  opacity: 0.4;
+}
+#question-page .main-btn {
+  margin-bottom: 20px;
+}
 #question-page .outline-btn {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 #question-page .outline-btn .icon {
   position: absolute;
