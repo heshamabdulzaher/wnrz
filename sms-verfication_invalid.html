@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="WNRZ App">
+    <meta name="theme-color" content="#ff4d00" />
+    <title>Welcome Page</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="manifest" href="/manifest.json">
 </head>
+
 <body>
     <section id="sms-verification" class="content-container">
         <div class="illustration">
-            <svg xmlns="http://www.w3.org/2000/svg" width="206" height="218" fill="none"><mask id="A" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="206" height="218"><path d="M0 .597h205.86V217.5H0V.597z" fill="#fff" class="B"/></mask><g mask="url(#A)" class="B"><path d="M205.754 151.254c-.824 5.6.67 71.56-64.325 65.902-14.456-1.26-28.027-3.792-40.47-7.095-13.924-3.696-26.444-8.353-37.23-13.274-22.933-10.466-38.062-22.12-42.258-28.236C13.53 156.986-.876 137.69.215 109.5c0 0-2.36-15.247 8.562-24.584 0 0 5.086-3.623 18.08-4.192s12.377-1.5 6.54-12.315S-2.978 33.734 14.963 16.03s40.4-18.918 66.103-10.005 69.922 29.613 96.033 62.525 29.48 77.093 28.656 82.703z" fill="#e5edf9"/></g><g class="B"><g fill="#404042"><path d="M151 195.374c0 7.218-5 13.126-11.106 13.126H58.098C51.993 208.5 47 202.592 47 195.374V24.63c0-7.222 4.993-13.13 11.098-13.13h81.796C146 11.5 151 17.408 151 24.63v170.744z"/><path d="M126 11.5v4.695c0 4.017-2.597 7.305-5.766 7.305h-42.47c-3.17 0-5.763-3.288-5.763-7.305V11.5"/></g><path d="M144 188.374c0 6.67-4.376 12.126-9.717 12.126H62.71c-5.34 0-9.71-5.457-9.71-12.126V30.63c0-6.672 4.37-12.13 9.71-12.13h71.572c5.34 0 9.717 5.458 9.717 12.13v157.744z" fill="#fff"/><path d="M122 17.5v4.305c0 3.682-2.26 6.695-5.02 6.695H80.016c-2.76 0-5.016-3.013-5.016-6.695V17.5" fill="#404042"/></g><mask id="B" mask-type="alpha" maskUnits="userSpaceOnUse" x="72" y="83" width="54" height="53"><path d="M72 83h54v53H72V83z" fill="#fff" class="B"/></mask><g mask="url(#B)" class="B"><path d="M109.308 117.37a1.57 1.57 0 0 1 0 2.249 1.63 1.63 0 0 1-1.145.465c-.417 0-.83-.155-1.147-.465L99 111.748l-8.018 7.87c-.318.312-.73.467-1.147.467s-.827-.155-1.145-.467c-.633-.62-.633-1.628 0-2.247l8.018-7.87-8.02-7.87c-.633-.62-.633-1.626 0-2.247s1.66-.62 2.292 0l8.02 7.87 8.016-7.87c.633-.62 1.66-.62 2.292 0a1.57 1.57 0 0 1 0 2.249l-8.018 7.87 8.018 7.87zM99 83c-14.89 0-27 11.888-27 26.5S84.11 136 99 136s27-11.888 27-26.5S113.887 83 99 83z" fill="#ff2943"/></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="206" height="218" fill="none">
+                <mask id="A" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="206" height="218">
+                    <path d="M0 .597h205.86V217.5H0V.597z" fill="#fff" class="B" />
+                </mask>
+                <g mask="url(#A)" class="B">
+                    <path d="M205.754 151.254c-.824 5.6.67 71.56-64.325 65.902-14.456-1.26-28.027-3.792-40.47-7.095-13.924-3.696-26.444-8.353-37.23-13.274-22.933-10.466-38.062-22.12-42.258-28.236C13.53 156.986-.876 137.69.215 109.5c0 0-2.36-15.247 8.562-24.584 0 0 5.086-3.623 18.08-4.192s12.377-1.5 6.54-12.315S-2.978 33.734 14.963 16.03s40.4-18.918 66.103-10.005 69.922 29.613 96.033 62.525 29.48 77.093 28.656 82.703z"
+                          fill="#e5edf9" />
+                </g>
+                <g class="B">
+                    <g fill="#404042">
+                        <path
+                              d="M151 195.374c0 7.218-5 13.126-11.106 13.126H58.098C51.993 208.5 47 202.592 47 195.374V24.63c0-7.222 4.993-13.13 11.098-13.13h81.796C146 11.5 151 17.408 151 24.63v170.744z" />
+                        <path d="M126 11.5v4.695c0 4.017-2.597 7.305-5.766 7.305h-42.47c-3.17 0-5.763-3.288-5.763-7.305V11.5" />
+                    </g>
+                    <path d="M144 188.374c0 6.67-4.376 12.126-9.717 12.126H62.71c-5.34 0-9.71-5.457-9.71-12.126V30.63c0-6.672 4.37-12.13 9.71-12.13h71.572c5.34 0 9.717 5.458 9.717 12.13v157.744z"
+                          fill="#fff" />
+                    <path d="M122 17.5v4.305c0 3.682-2.26 6.695-5.02 6.695H80.016c-2.76 0-5.016-3.013-5.016-6.695V17.5" fill="#404042" />
+                </g>
+                <mask id="B" mask-type="alpha" maskUnits="userSpaceOnUse" x="72" y="83" width="54" height="53">
+                    <path d="M72 83h54v53H72V83z" fill="#fff" class="B" />
+                </mask>
+                <g mask="url(#B)" class="B">
+                    <path d="M109.308 117.37a1.57 1.57 0 0 1 0 2.249 1.63 1.63 0 0 1-1.145.465c-.417 0-.83-.155-1.147-.465L99 111.748l-8.018 7.87c-.318.312-.73.467-1.147.467s-.827-.155-1.145-.467c-.633-.62-.633-1.628 0-2.247l8.018-7.87-8.02-7.87c-.633-.62-.633-1.626 0-2.247s1.66-.62 2.292 0l8.02 7.87 8.016-7.87c.633-.62 1.66-.62 2.292 0a1.57 1.57 0 0 1 0 2.249l-8.018 7.87 8.018 7.87zM99 83c-14.89 0-27 11.888-27 26.5S84.11 136 99 136s27-11.888 27-26.5S113.887 83 99 83z"
+                          fill="#ff2943" />
+                </g>
+            </svg>
         </div>
         <h1>SMS Verification Code Has Been Sent to</h1>
         <p>+977 079 1189</p>
-        
+
         <div class="sms-verification-code-boxs">
             <input type="number">
             <input type="number">
@@ -25,4 +56,5 @@
         <a href="#">Re-send code</a>
     </section>
 </body>
+
 </html>
