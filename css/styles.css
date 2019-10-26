@@ -315,6 +315,9 @@ section#home .questions .card .question {
   padding-bottom: 18px;
   border-bottom: 1px solid #cbcbcb;
 }
+section#home .questions .card .question > div {
+  position: relative;
+}
 section#home .questions .card .question .brand-logo {
   margin-right: 18px;
 }
@@ -324,6 +327,11 @@ section#home .questions .card .question .brand-name {
 section#home .questions .card .question h3 {
   font-weight: bold;
   font-size: 24px;
+}
+section#home .questions .card .question .green-check-mark {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 section#home .questions .card .details {
   display: flex;
@@ -339,6 +347,12 @@ section#home .questions .card .details > div .counter {
   color: #333;
   font-size: 16px;
   font-weight: bold;
+}
+section#home .questions .card .details .main-btn {
+  width: auto;
+  padding: 0 20px;
+  height: 38px;
+  margin: 0;
 }
 
 #question-page .header {

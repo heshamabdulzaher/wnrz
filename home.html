@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,29 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <section id="home" class="content-container">
         <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="79" height="36" fill="none"><g fill-rule="evenodd"><path d="M51.88 13.515v-.203L31.45 33.65c-3.1 3.085-8.124 3.085-11.223 0L0 13.515 12.922.652l13.02 12.763L38.964.657 51.88 13.515z" fill="url(#A)"/><path d="M79 13.157L57.45 33.642c-3.095 3.094-8.112 3.094-11.207 0L25.95 13.458 38.858.557 51.85 13.254 66.003.165 79 13.157z" fill="url(#B)"/><path d="M51.67 13.216L38.79 26.342 25.95 13.487 38.79.542l12.88 12.67" fill="#ff4d00" style="mix-blend-mode:multiply"/></g><defs><linearGradient id="A" x1="-25.94" y1="18.307" x2="6.908" y2="66.571" gradientUnits="userSpaceOnUse"><stop stop-color="#fce38a"/><stop offset="1" stop-color="#f38181"/></linearGradient><linearGradient id="B" x1="-.574" y1="18.064" x2="32.622" y2="67.258" gradientUnits="userSpaceOnUse"><stop stop-color="#fce38a"/><stop offset="1" stop-color="#ff4d00"/></linearGradient></defs></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="79" height="36" fill="none">
+                <g fill-rule="evenodd">
+                    <path d="M51.88 13.515v-.203L31.45 33.65c-3.1 3.085-8.124 3.085-11.223 0L0 13.515 12.922.652l13.02 12.763L38.964.657 51.88 13.515z"
+                          fill="url(#A)" />
+                    <path d="M79 13.157L57.45 33.642c-3.095 3.094-8.112 3.094-11.207 0L25.95 13.458 38.858.557 51.85 13.254 66.003.165 79 13.157z"
+                          fill="url(#B)" />
+                    <path d="M51.67 13.216L38.79 26.342 25.95 13.487 38.79.542l12.88 12.67" fill="#ff4d00" style="mix-blend-mode:multiply" />
+                </g>
+                <defs>
+                    <linearGradient id="A" x1="-25.94" y1="18.307" x2="6.908" y2="66.571" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fce38a" />
+                        <stop offset="1" stop-color="#f38181" />
+                    </linearGradient>
+                    <linearGradient id="B" x1="-.574" y1="18.064" x2="32.622" y2="67.258" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#fce38a" />
+                        <stop offset="1" stop-color="#ff4d00" />
+                    </linearGradient>
+                </defs>
+            </svg>
         </div>
         <div class="say-welcome">
             <h2>welcome Ahmed</h2>
@@ -24,7 +44,9 @@
                 <li class="active">Open questions</li>
                 <li>Expired questions</li>
             </ul>
-            <div class="tabs-bar"><div class="active"></div></div>
+            <div class="tabs-bar">
+                <div class="active"></div>
+            </div>
         </div>
 
         <!-- Cards -->
@@ -38,20 +60,27 @@
                         <div>
                             <div class="brand-name">Starbucks</div>
                             <h3>How many branches are there in Riyad?</h3>
+                            <span class="green-check-mark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
+                                    <path fill-rule="evenodd"
+                                          d="M26.247 12.93l-9.36 11.503a1.08 1.08 0 0 1-.838.397c-.217 0-.438-.065-.626-.2l-5.456-3.885a1.08 1.08 0 0 1-.253-1.506c.346-.485 1.02-.6 1.505-.252l4.632 3.296 8.722-10.716a1.08 1.08 0 0 1 1.676 1.364zM18 0C8.076 0 0 8.074 0 18s8.076 18 18 18 18-8.076 18-18S27.926 0 18 0z"
+                                          fill="#6ed300" />
+                                </svg>
+                            </span>
                         </div>
                     </div>
                     <div class="details">
                         <div>
-                           <p>Participants</p>
-                           <div class="counter">5243</div>
+                            <p>Participants</p>
+                            <div class="counter">5243</div>
                         </div>
                         <div>
-                           <p>Ranking</p>
-                           <div class="counter">311</div> 
+                            <p>Ranking</p>
+                            <div class="counter">311</div>
                         </div>
                         <div>
-                           <p>time left</p>
-                           <div class="counter">2 days</div> 
+                            <p>time left</p>
+                            <div class="counter">2 days</div>
                         </div>
                     </div>
                 </a>
@@ -73,13 +102,10 @@
                             <div class="counter">5243</div>
                         </div>
                         <div>
-                            <p>Ranking</p>
-                            <div class="counter">311</div> 
-                        </div>
-                        <div>
                             <p>time left</p>
-                            <div class="counter">2 days</div> 
+                            <div class="counter">2 days</div>
                         </div>
+                        <button class="main-btn">Answer</button>
                     </div>
                 </a>
             </li>
@@ -96,16 +122,16 @@
                     </div>
                     <div class="details">
                         <div>
-                           <p>Participants</p>
-                           <div class="counter">5243</div>
+                            <p>Participants</p>
+                            <div class="counter">5243</div>
                         </div>
                         <div>
-                           <p>Ranking</p>
-                           <div class="counter">311</div> 
+                            <p>Ranking</p>
+                            <div class="counter">311</div>
                         </div>
                         <div>
-                           <p>time left</p>
-                           <div class="counter">2 days</div> 
+                            <p>time left</p>
+                            <div class="counter">2 days</div>
                         </div>
                     </div>
                 </a>
@@ -113,4 +139,5 @@
         </ul>
     </section>
 </body>
+
 </html>
