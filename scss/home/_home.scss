@@ -29,9 +29,10 @@ section#home {
       margin-bottom: 10px;
 
       li {
-        margin-right: 20px;
         font-weight: 600;
         font-size: 16px;
+        width: 50%;
+        text-align: center;
 
         &.active {
           color: $orangeColor;
@@ -44,10 +45,18 @@ section#home {
       height: 2px;
       background-color: #cbcbcb;
 
-      .active {
+      div {
         background-color: $orangeColor;
-        width: 122px;
+        width: calc(50%);
         height: 100%;
+      }
+
+      .open {
+        margin-left: 0;
+      }
+
+      .expired {
+        margin-left: 50%;
       }
     }
   }
