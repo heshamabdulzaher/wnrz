@@ -293,7 +293,7 @@ input[type=number]::-webkit-outer-spin-button {
 .question-page .brand {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .question-page .brand .logo {
   margin-right: 20px;
@@ -302,14 +302,15 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 24px;
   font-weight: normal;
 }
-.question-page #question h1 {
+.question-page .question h1 {
   font-size: 38px;
   line-height: 46px;
   padding-bottom: 20px;
   border-bottom: 1px solid #cbcbcb;
   position: relative;
+  padding-right: 24px;
 }
-.question-page #question h1 span {
+.question-page .question h1 span {
   position: absolute;
   top: 0;
   right: 0;

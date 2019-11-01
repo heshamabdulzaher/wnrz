@@ -2,7 +2,7 @@
   .brand {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     .logo {
       margin-right: 20px;
@@ -14,13 +14,14 @@
     }
   }
 
-  #question {
+  .question {
     h1 {
       font-size: 38px;
       line-height: 46px;
       padding-bottom: 20px;
       border-bottom: 1px solid $grayBorder;
       position: relative;
+      padding-right: 24px;
 
       span {
         position: absolute;
