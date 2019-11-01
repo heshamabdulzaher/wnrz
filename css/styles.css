@@ -378,6 +378,20 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 16px;
 }
 
+.share-question .share-links button {
+  box-shadow: none;
+  margin-top: 24px;
+}
+.share-question .share-links button.whatsapp {
+  background-color: #0AC144;
+}
+.share-question .share-links button.twitter {
+  background-color: #069FF5;
+}
+.share-question .share-links button.copy-link {
+  background-color: #333;
+}
+
 .main-btn,
 .outline-btn {
   border-radius: 12px;
@@ -406,6 +420,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 50%;
   left: 30px;
   transform: translateY(-50%);
+  display: flex;
 }
 .main-btn a,
 .outline-btn a {

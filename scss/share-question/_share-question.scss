@@ -1,0 +1,21 @@
+.share-question {
+    .share-links {
+        button {
+            box-shadow: none;
+            margin-top: 24px;
+
+            &.whatsapp {
+                background-color: #0AC144;
+            }
+
+            &.twitter {
+                background-color: #069FF5;
+            }
+
+            &.copy-link {
+                background-color: $black333;
+            }
+
+        }
+    }
+}
