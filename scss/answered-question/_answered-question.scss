@@ -1,0 +1,62 @@
+.answered-question {
+
+    // Total pts
+    .total-pts {
+        text-align: center;
+        margin-top: 50px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $grayBorder;
+
+        h1 {
+            font-size: 64px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+    }
+
+    // your answers
+    .your-answer {
+        margin-top: 20px;
+
+        p {
+            margin-bottom: 10px;
+            color: $black333;
+            font-size: 18px;
+        }
+    }
+
+    // What the question is?
+    .what-the-question-is {
+        margin-top: 35px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $grayBorder;
+
+        .brand {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                img {
+                    width: 50px;
+                }
+
+                margin-right: 20px;
+            }
+        }
+
+        h2 {
+            margin-top: 5px;
+        }
+    }
+
+    .share-question {
+        padding-top: 60px;
+
+        .main-btn {
+            margin-top: 16px;
+        }
+    }
+}

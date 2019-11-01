@@ -20,6 +20,13 @@
         background-color: #fff;
     }
 
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+    }
+
     a {
         color: #fff !important;
         width: 100%;

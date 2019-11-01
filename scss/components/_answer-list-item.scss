@@ -1,0 +1,54 @@
+.answer-list-item {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 24px;
+    color: $black333;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 18px;
+    }
+
+    &.selected {
+        background-color: $black333;
+        color: #fff;
+
+        &.correct {
+            background-color: #6ED300;
+            color: #fff;
+            border: 0 !important;
+
+            &::after {
+                content: "Correct!";
+                color: #376802;
+            }
+
+        }
+
+        &.wrong {
+            background-color: $warningColor;
+            color: #fff;
+
+            &::after {
+                content: "Wrong!";
+                color: #630914;
+            }
+
+        }
+    }
+
+    &.correct {
+        border: 1px solid #6ED300;
+    }
+
+    &.disabled {
+        opacity: .4;
+    }
+}

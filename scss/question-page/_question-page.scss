@@ -1,23 +1,4 @@
-#question-page {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-
-    .profile-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #dfe8f6;
-      color: $shipCoveColor;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
+.question-page {
   .brand {
     display: flex;
     align-items: center;
@@ -49,64 +30,6 @@
       }
     }
 
-    // Answers
-    .answers {
-      li {
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 40px;
-        margin-bottom: 15px;
-        padding: 8px 16px;
-        font-weight: bold;
-        font-size: 24px;
-        color: $black333;
-        position: relative;
-
-        &::after {
-          position: absolute;
-          top: 50%;
-          right: 20px;
-          transform: translateY(-50%);
-          font-size: 18px;
-        }
-
-        &.selected {
-          background-color: $black333;
-          color: #fff;
-
-          &.correct-answer {
-            background-color: #6ED300;
-            color: #fff;
-            border: 0 !important;
-
-            &::after {
-              content: "Correct!";
-              color: #376802;
-            }
-
-          }
-
-          &.wrong-answer {
-            background-color: $warningColor;
-            color: #fff;
-
-            &::after {
-              content: "Wrong!";
-              color: #630914;
-            }
-
-          }
-        }
-
-        &.correct-answer {
-          border: 1px solid #6ED300;
-        }
-
-        &.disabled {
-          opacity: .4;
-        }
-      }
-    }
-
   }
 
 
@@ -116,13 +39,6 @@
 
   .outline-btn {
     margin-top: 10px;
-
-    .icon {
-      position: absolute;
-      top: 50%;
-      left: 30px;
-      transform: translateY(-50%);
-    }
   }
 
   .other-questions {
@@ -136,52 +52,6 @@
 
     .questions {
       padding-top: 30px;
-
-      .card {
-        background-color: #fff;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
-        padding: 20px;
-
-        .question {
-          display: flex;
-          padding-bottom: 18px;
-          border-bottom: 1px solid $grayBorder;
-
-          .brand-logo {
-            margin-right: 18px;
-          }
-
-          .brand-name {
-            font-size: 14px;
-          }
-
-          h3 {
-            font-weight: bold;
-            font-size: 24px;
-          }
-        }
-
-        .details {
-          display: flex;
-          align-items: center;
-          padding-top: 12px;
-          justify-content: space-between;
-
-          >div {
-            p {
-              font-size: 13px;
-              line-height: 18px;
-            }
-
-            .counter {
-              color: $black333;
-              font-size: 16px;
-              font-weight: bold;
-            }
-          }
-        }
-      }
     }
   }
 }

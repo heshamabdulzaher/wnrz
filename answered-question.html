@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <section id="question-page" class="content-container">
+    <section class="answered-question content-container">
         <div class="header">
             <a href="./home.html" class="back-arrow">
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="23" fill="none">
@@ -24,79 +24,49 @@
             </a>
             <div class="profile-avatar"><a href="./user-profile.html">AY</a></div>
         </div>
+        
+        <div class="total-pts">
+            <h1 class="number">1234</h1>
+            <h3>Total pts.</h3>
+        </div>
 
-        <!-- Brand -->
-        <div class="brand">
-            <div class="logo">
-                <img src="./images/brand1.png" alt="" />
+        <div class="your-answer">
+            <p>You answered</p>
+            <div class="answer-list-item selected correct">12</div>
+        </div>
+
+        <div class="what-the-question-is">
+            <div class="brand">
+                <div class="logo">
+                    <img src="./images/brand1.png" alt="" />
+                </div>
+                <h3 class="name">Starbucks</h3>
             </div>
-            <h3 class="brand-name">Starbucks</h3>
+            <h2>How many branches are there in Riyad?</h2>
         </div>
 
-        <!-- Question -->
-        <div class="question">
-            <h1>How many branches are there in Riyad?</h1>
-
-            <!-- Answers -->
-            <ul class="answers">
-                <li class="selected">12</li>
-                <li>15</li>
-                <li>17</li>
-                <li>7</li>
-            </ul>
-        </div>
-
-        <button class="main-btn">Send Answer</button>
-        <button class="outline-btn">
-            Share question
-            <div class="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
-                    <mask id="A" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="4" width="22" height="22">
-                        <path fill-rule="evenodd" d="M0 4.797h21.762V26H0V4.797z" fill="#fff" />
-                    </mask>
-                    <g mask="url(#A)">
+        <div class="share-question">
+            <p>Share to earn more points</p>
+            <button class="main-btn">
+                Share question
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none">
+                        <mask id="A" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="4" width="22" height="22">
+                            <path fill-rule="evenodd" d="M0 4.797h21.762V26H0V4.797z" fill="#fff" />
+                        </mask>
+                        <g mask="url(#A)">
+                            <path fill-rule="evenodd"
+                                    d="M20.762 13.605a1 1 0 0 0-1 1l.01 9.06c-.052.1-.407.336-.986.336h-15.8c-.58 0-.936-.237-.977-.28V7.133c.05-.1.408-.336.987-.336h2.37a1 1 0 1 0 0-2h-2.37c-1.67 0-2.977 1-2.977 2.28V23.72C0 25 1.308 26 2.977 26h15.8c1.668 0 2.975-1.002 2.975-2.28v-9.115a1 1 0 0 0-1-1z"
+                                    fill="#fff" />
+                        </g>
                         <path fill-rule="evenodd"
-                              d="M20.762 13.605a1 1 0 0 0-1 1l.01 9.06c-.052.1-.407.336-.986.336h-15.8c-.58 0-.936-.237-.977-.28V7.133c.05-.1.408-.336.987-.336h2.37a1 1 0 1 0 0-2h-2.37c-1.67 0-2.977 1-2.977 2.28V23.72C0 25 1.308 26 2.977 26h15.8c1.668 0 2.975-1.002 2.975-2.28v-9.115a1 1 0 0 0-1-1z"
-                              fill="#333" />
-                    </g>
-                    <path fill-rule="evenodd"
-                          d="M25.706 4.888L20.932.284a1.03 1.03 0 0 0-1.419 0c-.392.377-.392 1 0 1.37l3.06 2.952h-3.44C11.893 4.605 6 10.18 6 17.032c0 .535.45.968 1.004.968s1.004-.433 1.004-.968C8.007 11.247 13 6.54 19.135 6.54h3.44l-3.06 2.95a.94.94 0 0 0 0 1.369c.196.2.453.284.7.284s.514-.094.7-.284l4.774-4.603c.188-.18.294-.428.294-.684s-.106-.503-.294-.684z"
-                          fill="#333" />
-                </svg>
-            </div>
-        </button>
+                                d="M25.706 4.888L20.932.284a1.03 1.03 0 0 0-1.419 0c-.392.377-.392 1 0 1.37l3.06 2.952h-3.44C11.893 4.605 6 10.18 6 17.032c0 .535.45.968 1.004.968s1.004-.433 1.004-.968C8.007 11.247 13 6.54 19.135 6.54h3.44l-3.06 2.95a.94.94 0 0 0 0 1.369c.196.2.453.284.7.284s.514-.094.7-.284l4.774-4.603c.188-.18.294-.428.294-.684s-.106-.503-.294-.684z"
+                                fill="#fff" />
+                    </svg>
+                </div>
+            </button>
+        </div> 
 
-        <div class="other-questions">
-            <h2>Other questions by Starbucks</h2>
-            <!-- Cards -->
-            <ul class="questions">
-                <li class="card">
-                    <div class="question">
-                        <div class="brand-logo">
-                            <img src="./images/brand1.png" alt="" />
-                        </div>
-                        <div>
-                            <div class="brand-name">Starbucks</div>
-                            <h3>How many branches are there in Riyad?</h3>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <div>
-                            <p>Participants</p>
-                            <div class="counter">5243</div>
-                        </div>
-                        <div>
-                            <p>Ranking</p>
-                            <div class="counter">311</div>
-                        </div>
-                        <div>
-                            <p>time left</p>
-                            <div class="counter">2 days</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
     </section>
 </body>
 
