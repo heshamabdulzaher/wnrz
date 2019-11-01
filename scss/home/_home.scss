@@ -1,4 +1,4 @@
-section#home {
+.home-page {
   .say-welcome {
     margin-top: 10px;
     display: flex;
@@ -35,7 +35,9 @@ section#home {
         text-align: center;
 
         &.active {
-          color: $orangeColor;
+          a {
+            color: $orangeColor;
+          }
         }
       }
     }
@@ -63,70 +65,5 @@ section#home {
 
   .questions {
     padding-top: 30px;
-
-    .card {
-      background-color: #fff;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-      border-radius: 20px;
-      padding: 20px;
-      margin-bottom: 20px;
-
-      .question {
-        display: flex;
-        padding-bottom: 18px;
-        border-bottom: 1px solid $grayBorder;
-
-        >div {
-          position: relative;
-        }
-
-        .brand-logo {
-          margin-right: 18px;
-        }
-
-        .brand-name {
-          font-size: 14px;
-        }
-
-        h3 {
-          font-weight: bold;
-          font-size: 24px;
-        }
-
-        .green-check-mark {
-          position: absolute;
-          top: 0;
-          right: 0;
-        }
-      }
-
-      .details {
-        display: flex;
-        align-items: center;
-        padding-top: 12px;
-        justify-content: space-between;
-
-        >div {
-          p {
-            font-size: 13px;
-            line-height: 18px;
-          }
-
-          .counter {
-            color: $black333;
-            font-size: 16px;
-            font-weight: bold;
-          }
-
-        }
-
-        .main-btn {
-          width: auto;
-          padding: 0 20px;
-          height: 38px;
-          margin: 0;
-        }
-      }
-    }
   }
 }
