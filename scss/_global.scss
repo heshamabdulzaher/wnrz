@@ -3,6 +3,7 @@ $darkGrayColor: #5f697c;
 $black333: #333;
 $grayBorder: #cbcbcb;
 $shipCoveColor: #728eba;
+$warningColor: #FF2943;
 
 // GLOBAL STYLING
 * {
@@ -17,6 +18,7 @@ $shipCoveColor: #728eba;
 body {
   color: $darkGrayColor;
 }
+
 .content-container {
   padding: 24px;
   max-width: 600px;
@@ -29,11 +31,13 @@ h1 {
   line-height: 29px;
   margin-bottom: 20px;
 }
+
 h1,
 h2,
 h3 {
   color: $black333;
 }
+
 p {
   font-size: 16px;
   line-height: 28px;
@@ -44,6 +48,7 @@ a {
   cursor: pointer;
   color: $darkGrayColor;
 }
+
 ul {
   list-style-type: none;
 }

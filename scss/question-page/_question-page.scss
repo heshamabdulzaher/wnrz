@@ -86,7 +86,7 @@
           }
 
           &.wrong-answer {
-            background-color: #FF2943;
+            background-color: $warningColor;
             color: #fff;
 
             &::after {
