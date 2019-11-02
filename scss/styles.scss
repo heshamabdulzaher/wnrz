@@ -1,12 +1,17 @@
+// GLOBAL
 @import "./global";
-@import "./welcome-page/welcome-page";
-@import "./mobile-number/mobile.number";
-@import "./sms-verification/sms-verfication";
-@import "./introduce-yourself/introduce-yourself";
-@import "./home/home";
-@import "./question-page/question-page";
-@import "./answered-question/answered-question";
-@import "./share-question/share-question";
 
-// Components 
-@import './components/base'
+
+// COMPONENTS 
+@import './components/base';
+
+
+// PAGES
+@import "./pages/home";
+@import "./pages/answered-question";
+@import "./pages/user-profile";
+@import "./pages/welcome-page";
+@import "./pages/mobile.number";
+@import "./pages/sms-verfication";
+@import "./pages/question-page";
+@import "./pages/share-question";

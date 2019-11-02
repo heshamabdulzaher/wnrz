@@ -7,13 +7,10 @@
 
     .question {
         display: flex;
+        padding-top: 12px;
         padding-bottom: 18px;
         border-bottom: 1px solid $grayBorder;
-
-        >div {
-            position: relative;
-            padding-top: 4px;
-        }
+        position: relative;
 
         .brand-logo {
             margin-right: 18px;
@@ -31,8 +28,8 @@
         .green-check-mark-icon,
         .x-icon {
             position: absolute;
-            top: -8px;
-            right: -8px;
+            top: -6px;
+            right: -6px;
         }
     }
 
