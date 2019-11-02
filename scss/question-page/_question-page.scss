@@ -1,39 +1,4 @@
 .question-page {
-  .brand {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-
-    .logo {
-      margin-right: 20px;
-    }
-
-    .brand-name {
-      font-size: 24px;
-      font-weight: normal;
-    }
-  }
-
-  .question {
-    h1 {
-      font-size: 38px;
-      line-height: 46px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid $grayBorder;
-      position: relative;
-      padding-right: 24px;
-
-      span {
-        position: absolute;
-        top: 0;
-        right: 0;
-        display: block;
-      }
-    }
-
-  }
-
-
   .main-btn {
     margin-bottom: 20px;
   }
@@ -49,10 +14,7 @@
 
     h2 {
       font-size: 28px;
-    }
-
-    .questions {
-      padding-top: 30px;
+      margin-bottom: 30px;
     }
   }
 }

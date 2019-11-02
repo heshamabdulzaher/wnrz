@@ -4,23 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    .profile-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #dfe8f6;
-      color: $shipCoveColor;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
   }
 
   // Tbas
   .tabs {
-    margin-top: 30px;
+    margin: 30px 0;
 
     ul {
       display: flex;
@@ -61,9 +49,5 @@
         margin-left: 50%;
       }
     }
-  }
-
-  .questions {
-    padding-top: 30px;
   }
 }

@@ -252,19 +252,8 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   justify-content: space-between;
 }
-.home-page .say-welcome .profile-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #dfe8f6;
-  color: #728eba;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .home-page .tabs {
-  margin-top: 30px;
+  margin: 30px 0;
 }
 .home-page .tabs ul {
   display: flex;
@@ -297,36 +286,7 @@ input[type=number]::-webkit-outer-spin-button {
 .home-page .tabs .tabs-bar .expired {
   margin-left: 50%;
 }
-.home-page .questions {
-  padding-top: 30px;
-}
 
-.question-page .brand {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.question-page .brand .logo {
-  margin-right: 20px;
-}
-.question-page .brand .brand-name {
-  font-size: 24px;
-  font-weight: normal;
-}
-.question-page .question h1 {
-  font-size: 38px;
-  line-height: 46px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #cbcbcb;
-  position: relative;
-  padding-right: 24px;
-}
-.question-page .question h1 span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-}
 .question-page .main-btn {
   margin-bottom: 20px;
 }
@@ -340,9 +300,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .question-page .other-questions h2 {
   font-size: 28px;
-}
-.question-page .other-questions .questions {
-  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .answered-question .total-pts {
@@ -369,16 +327,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 35px;
   padding-bottom: 30px;
   border-bottom: 1px solid #cbcbcb;
-}
-.answered-question .what-the-question-is .brand {
-  display: flex;
-  align-items: center;
-}
-.answered-question .what-the-question-is .brand .logo {
-  margin-right: 20px;
-}
-.answered-question .what-the-question-is .brand .logo img {
-  width: 50px;
 }
 .answered-question .what-the-question-is h2 {
   margin-top: 5px;
@@ -516,17 +464,6 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   margin-bottom: 20px;
 }
-.header .profile-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #dfe8f6;
-  color: #728eba;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .answer-list-item {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -577,6 +514,46 @@ input[type=number]::-webkit-outer-spin-button {
 .answer-list-item.disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #dfe8f6;
+  color: #728eba;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question h1 {
+  font-size: 38px;
+  line-height: 46px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cbcbcb;
+  position: relative;
+  padding-right: 24px;
+}
+.question h1 span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.brand .brand-logo {
+  margin-right: 20px;
+}
+.brand .brand-name {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,14 @@
+.brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .brand-logo {
+        margin-right: 20px;
+    }
+
+    .brand-name {
+        font-size: 24px;
+        font-weight: normal;
+    }
+}
