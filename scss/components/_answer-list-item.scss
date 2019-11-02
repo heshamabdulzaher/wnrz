@@ -7,6 +7,7 @@
     font-size: 24px;
     color: $black333;
     position: relative;
+    cursor: pointer;
 
     &::after {
         position: absolute;
@@ -19,11 +20,13 @@
     &.selected {
         background-color: $black333;
         color: #fff;
+        cursor: not-allowed;
 
         &.correct {
             background-color: #6ED300;
             color: #fff;
             border: 0 !important;
+            cursor: not-allowed;
 
             &::after {
                 content: "Correct!";
@@ -35,6 +38,7 @@
         &.wrong {
             background-color: $warningColor;
             color: #fff;
+            cursor: not-allowed;
 
             &::after {
                 content: "Wrong!";
@@ -46,9 +50,11 @@
 
     &.correct {
         border: 1px solid #6ED300;
+        cursor: not-allowed;
     }
 
     &.disabled {
         opacity: .4;
+        cursor: not-allowed;
     }
 }
