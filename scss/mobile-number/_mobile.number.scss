@@ -42,12 +42,17 @@
         padding-right: 44px;
       }
 
+      &.valid {
+        color: green;
+      }
+
       &:focus+.underline::after {
         animation: underline_active 0.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
       }
     }
 
-    .x-icon {
+    .x-icon,
+    .green-check-mark-icon {
       position: absolute;
       top: 5px;
       right: 0;
