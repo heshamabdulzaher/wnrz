@@ -178,13 +178,20 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-evenly;
 }
+.sms-verification .sms-verification-code-boxs.invalid input {
+  color: #FF2943;
+}
 .sms-verification .sms-verification-code-boxs input {
   background-color: #dfe8f6;
   border-radius: 12px;
   width: 50px;
   height: 50px;
   font-size: 30px;
+  font-weight: bold;
   text-align: center;
+}
+.sms-verification .sms-verification-code-boxs input:focus {
+  border: 1px solid #20DCDB;
 }
 .sms-verification a {
   color: #ff4d00;
