@@ -14,6 +14,12 @@
 
         .brand-logo {
             margin-right: 18px;
+            position: relative;
+            min-width: 80px;
+            width: 80px !important;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
         }
 
         .brand-name {
