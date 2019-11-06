@@ -90,6 +90,18 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
 }
 
+.sign-out-btn {
+  width: auto;
+  height: 38px;
+  font-size: 14px;
+  padding: 0 12px;
+  border-radius: 6px;
+  background-color: #dfe8f6;
+  border: 0;
+  color: #333;
+  cursor: pointer;
+}
+
 .question-card {
   background-color: #fff;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -318,16 +330,17 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 16px;
 }
 
-.introduce-yourself {
+.user-profile {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 40px;
 }
-.introduce-yourself .rectangle {
+.user-profile .rectangle {
   width: 150px;
   height: 150px;
   background-color: #dfe8f6;
   border-radius: 50%;
   margin: auto;
+  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,12 +348,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
   color: #728eba;
 }
-.introduce-yourself h1 {
+.user-profile h1 {
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 36px;
 }
-.introduce-yourself input {
+.user-profile input {
   border-bottom: 1px solid #cbcbcb;
   padding: 15px;
   text-align: center;
@@ -350,18 +363,18 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 28px;
   font-weight: 600;
 }
-.introduce-yourself .info {
+.user-profile .info {
   border-top: 1px solid #cbcbcb;
   padding: 20px 0;
   text-align: left;
 }
-.introduce-yourself .info > div {
+.user-profile .info > div {
   margin-bottom: 24px;
 }
-.introduce-yourself .info > div p {
+.user-profile .info > div p {
   font-size: 14px;
 }
-.introduce-yourself .info > div h3 {
+.user-profile .info > div h3 {
   font-size: 44px;
   line-height: 45px;
 }
