@@ -7,8 +7,24 @@
         margin-right: 20px;
     }
 
-    .brand-name {
-        font-size: 24px;
-        font-weight: normal;
+    .brand-name-and-award {
+
+        .brand-name {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .award {
+            display: flex;
+            align-items: center;
+            margin-top: 6px;
+            font-size: 16px;
+            color: $orangeColor;
+
+            div {
+                margin: 0 10px;
+            }
+        }
     }
+
 }
