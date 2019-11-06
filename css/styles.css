@@ -65,19 +65,28 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
   justify-content: center;
 }
-.main-btn.main-btn,
-.outline-btn.main-btn {
+.main-btn.main-btn, .main-btn.main-btn:hover, .main-btn.main-btn:focus, .main-btn.main-btn:active,
+.outline-btn.main-btn,
+.outline-btn.main-btn:hover,
+.outline-btn.main-btn:focus,
+.outline-btn.main-btn:active {
   background: #ff4d00;
   box-shadow: 0px 15px 25px rgba(255, 77, 0, 0.248006);
   color: #fbfbfb;
 }
-.main-btn.disabled,
-.outline-btn.disabled {
+.main-btn.disabled, .main-btn.disabled:hover, .main-btn.disabled:focus, .main-btn.disabled:active,
+.outline-btn.disabled,
+.outline-btn.disabled:hover,
+.outline-btn.disabled:focus,
+.outline-btn.disabled:active {
   opacity: 0.4;
   cursor: not-allowed;
 }
-.main-btn.outline-btn,
-.outline-btn.outline-btn {
+.main-btn.outline-btn, .main-btn.outline-btn:hover, .main-btn.outline-btn:focus, .main-btn.outline-btn:active,
+.outline-btn.outline-btn,
+.outline-btn.outline-btn:hover,
+.outline-btn.outline-btn:focus,
+.outline-btn.outline-btn:active {
   border: 1px solid #666;
   background-color: #fff;
 }

@@ -12,19 +12,27 @@
     align-items: center;
     justify-content: center;
 
-    &.main-btn {
+    &.main-btn,
+    &.main-btn:hover,
+    &.main-btn:focus,
+    &.main-btn:active {
         background: $orangeColor;
         box-shadow: 0px 15px 25px rgba(255, 77, 0, 0.248006);
         color: #fbfbfb;
-
     }
 
-    &.disabled {
+    &.disabled,
+    &.disabled:hover,
+    &.disabled:focus,
+    &.disabled:active {
         opacity: 0.4;
         cursor: not-allowed;
     }
 
-    &.outline-btn {
+    &.outline-btn,
+    &.outline-btn:hover,
+    &.outline-btn:focus,
+    &.outline-btn:active {
         border: 1px solid #666;
         background-color: #fff;
     }
