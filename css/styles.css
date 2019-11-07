@@ -354,6 +354,7 @@ input[type=number] {
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 60px);
+  max-width: 600px;
 }
 .award-modal .modal-content > * {
   text-align: center;
@@ -362,10 +363,14 @@ input[type=number] {
   color: #333;
   font-size: 22px;
   line-height: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .award-modal .modal-content .title b {
   color: #ff4d00;
+}
+.award-modal .modal-content .award-img img {
+  max-width: 300px;
+  max-height: 400px;
 }
 .award-modal .modal-content .close {
   margin-top: 40px;
