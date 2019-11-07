@@ -35,6 +35,7 @@ h3 {
 p {
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 0;
 }
 
 a {
@@ -136,7 +137,7 @@ input[type=number] {
   position: relative;
 }
 .question-card .question .brand-logo {
-  margin-right: 18px;
+  margin-left: 18px;
   position: relative;
   min-width: 80px;
   width: 80px !important;
@@ -155,7 +156,8 @@ input[type=number] {
 .question-card .question .x-icon {
   position: absolute;
   top: -6px;
-  right: -6px;
+  left: -6px;
+  right: auto;
 }
 .question-card .details {
   display: flex;
@@ -166,11 +168,18 @@ input[type=number] {
 .question-card .details > div p {
   font-size: 13px;
   line-height: 18px;
+  margin-bottom: 8px;
 }
 .question-card .details > div .counter {
   color: #333;
   font-size: 16px;
   font-weight: bold;
+}
+.question-card .details > div em {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 4px;
+  color: #5f697c;
 }
 .question-card .details .main-btn {
   width: auto;
@@ -203,7 +212,7 @@ input[type=number] {
 .answer-list-item::after {
   position: absolute;
   top: 50%;
-  right: 20px;
+  left: 20px;
   transform: translateY(-50%);
   font-size: 18px;
 }
@@ -260,13 +269,13 @@ input[type=number] {
   line-height: 46px;
   padding-bottom: 20px;
   border-bottom: 1px solid #cbcbcb;
-  padding-right: 40px;
+  padding-left: 40px;
 }
 .question .x-icon,
 .question .green-check-mark-icon {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 .brand {
@@ -275,7 +284,7 @@ input[type=number] {
   margin-bottom: 10px;
 }
 .brand .brand-logo {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .brand .brand-name-and-award .brand-name {
   font-size: 24px;
@@ -289,7 +298,11 @@ input[type=number] {
   color: #ff4d00;
 }
 .brand .brand-name-and-award .award div {
-  margin: 0 10px;
+  margin: 0 12px;
+  font-size: 18px;
+}
+.brand .brand-name-and-award .award .i-icon {
+  cursor: pointer;
 }
 
 .spinner {
@@ -383,6 +396,9 @@ input[type=number] {
 .home-page .tabs ul li.active {
   color: #ff4d00;
 }
+.home-page .tabs ul li.inactive {
+  cursor: pointer;
+}
 .home-page .tabs .tabs-bar {
   width: 100%;
   height: 2px;
@@ -394,10 +410,10 @@ input[type=number] {
   height: 100%;
 }
 .home-page .tabs .tabs-bar .open {
-  margin-left: 0;
+  margin-right: 0;
 }
 .home-page .tabs .tabs-bar .expired {
-  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .answered-question .total-pts {
@@ -541,7 +557,7 @@ input[type=number] {
 }
 .what-is-your-mobile-number .mobile-number-input input.invalid {
   color: #FF2943;
-  padding-right: 44px;
+  padding-left: 44px;
 }
 .what-is-your-mobile-number .mobile-number-input input.valid {
   color: green;
@@ -553,7 +569,7 @@ input[type=number] {
 .what-is-your-mobile-number .mobile-number-input .green-check-mark-icon {
   position: absolute;
   top: 5px;
-  right: 0;
+  left: 0;
 }
 .what-is-your-mobile-number .mobile-number-input .underline {
   width: 100%;

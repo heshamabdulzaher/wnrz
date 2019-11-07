@@ -13,7 +13,7 @@
         position: relative;
 
         .brand-logo {
-            margin-right: 18px;
+            margin-left: 18px;
             position: relative;
             min-width: 80px;
             width: 80px !important;
@@ -35,7 +35,8 @@
         .x-icon {
             position: absolute;
             top: -6px;
-            right: -6px;
+            left: -6px;
+            right: auto;
         }
     }
 
@@ -49,12 +50,20 @@
             p {
                 font-size: 13px;
                 line-height: 18px;
+                margin-bottom: 8px;
             }
 
             .counter {
                 color: $black333;
                 font-size: 16px;
                 font-weight: bold;
+            }
+
+            em {
+                font-size: 14px;
+                font-weight: normal;
+                margin: 0 4px;
+                color: #5f697c;
             }
 
         }

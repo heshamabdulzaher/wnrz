@@ -25,6 +25,10 @@
                 &.active {
                     color: $orangeColor;
                 }
+
+                &.inactive {
+                    cursor: pointer;
+                }
             }
         }
 
@@ -40,11 +44,11 @@
             }
 
             .open {
-                margin-left: 0;
+                margin-right: 0;
             }
 
             .expired {
-                margin-left: 50%;
+                margin-right: 50%;
             }
         }
     }

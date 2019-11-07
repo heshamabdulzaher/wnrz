@@ -4,7 +4,7 @@
     margin-bottom: 10px;
 
     .brand-logo {
-        margin-right: 20px;
+        margin-left: 20px;
     }
 
     .brand-name-and-award {
@@ -22,7 +22,12 @@
             color: $orangeColor;
 
             div {
-                margin: 0 10px;
+                margin: 0 12px;
+                font-size: 18px;
+            }
+
+            .i-icon {
+                cursor: pointer;
             }
         }
     }
