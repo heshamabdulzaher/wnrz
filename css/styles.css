@@ -9,12 +9,14 @@
 
 body {
   color: #5f697c;
+  font-size: 17px;
 }
 
 .content-container {
   padding: 24px;
   max-width: 600px;
   margin: 0 auto;
+  direction: rtl;
 }
 
 h1 {
@@ -45,10 +47,14 @@ ul {
   list-style-type: none;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .main-btn,
@@ -174,7 +180,10 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 24px;
+  padding-top: 32px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .answer-list-item {
@@ -423,17 +432,13 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 16px;
 }
 
-.user-profile {
-  text-align: center;
-  padding-top: 40px;
-}
 .user-profile .rectangle {
   width: 150px;
   height: 150px;
   background-color: #dfe8f6;
   border-radius: 50%;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -445,6 +450,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 36px;
+  text-align: center;
+}
+.user-profile h1 span {
+  margin-left: 5px;
 }
 .user-profile input {
   border-bottom: 1px solid #cbcbcb;
@@ -459,7 +468,6 @@ input[type=number]::-webkit-outer-spin-button {
 .user-profile .info {
   border-top: 1px solid #cbcbcb;
   padding: 20px 0;
-  text-align: left;
 }
 .user-profile .info > div {
   margin-bottom: 24px;

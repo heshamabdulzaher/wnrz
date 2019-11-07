@@ -17,12 +17,14 @@ $warningColor: #FF2943;
 
 body {
   color: $darkGrayColor;
+  font-size: 17px;
 }
 
 .content-container {
   padding: 24px;
   max-width: 600px;
   margin: 0 auto;
+  direction: rtl;
 }
 
 h1 {
@@ -53,8 +55,12 @@ ul {
   list-style-type: none;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
