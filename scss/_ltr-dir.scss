@@ -1,9 +1,6 @@
-body.ltr-dir {
-
-    // Main container
-    .content-container {
-        direction: ltr;
-    }
+// Main container
+.content-container.ltr-dir {
+    direction: ltr;
 
     // Questioon card component
     .question-card {
