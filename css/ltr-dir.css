@@ -1,0 +1,58 @@
+ /* Main container */
+ body.ltr-dir .content-container {
+     direction: ltr;
+ }
+
+ /* Questioon card component */
+ body.ltr-dir .question-card .brand-logo {
+     margin-right: 18px;
+     margin-left: 0 !important;
+ }
+
+ body.ltr-dir .question-card .green-check-mark-icon,
+ body.ltr-dir .question-card .x-icon {
+     left: auto !important;
+     right: -6px !important;
+ }
+
+ /* Brand */
+ body.ltr-dir .brand .brand-logo {
+     margin-right: 20px;
+     margin-left: 0;
+ }
+
+ /* Single question page */
+ body.ltr-dir .question h1 {
+     padding-right: 40px;
+     padding-left: 0;
+ }
+
+ body.ltr-dir .question .x-icon,
+ body.ltr-dir .question .green-check-mark-icon {
+     left: auto;
+     right: 0;
+ }
+
+ /* Answer list item */
+ body.ltr-dir .answer-list-item::after {
+     left: auto;
+     right: 20px;
+ }
+
+ /* Mobile number page */
+ body.ltr-dir .what-is-your-mobile-number .x-icon,
+ body.ltr-dir .what-is-your-mobile-number .green-check-mark-icon {
+     left: auto !important;
+     right: 0;
+ }
+
+ body.ltr-dir .what-is-your-mobile-number input.invalid {
+     padding-left: 0 !important;
+     padding-right: 44px;
+ }
+
+ /* Tabs Questions */
+ body.ltr-dir .tabs-bar .expired {
+     margin-right: 0;
+     margin-left: 50%;
+ }
