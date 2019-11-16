@@ -16,7 +16,6 @@ body {
   padding: 24px;
   max-width: 600px;
   margin: 0 auto;
-  direction: rtl;
 }
 
 h1 {
@@ -274,7 +273,7 @@ input[type=number] {
 .question .x-icon,
 .question .green-check-mark-icon {
   position: absolute;
-  top: 0;
+  top: -6px;
   left: 0;
 }
 
@@ -413,9 +412,6 @@ input[type=number] {
   background-color: #ff4d00;
   width: calc(50%);
   height: 100%;
-}
-.home-page .tabs .tabs-bar .open {
-  margin-right: 0;
 }
 .home-page .tabs .tabs-bar .expired {
   margin-right: 50%;
@@ -682,6 +678,49 @@ input[type=number] {
 }
 .share-question .share-links .main-btn.copy-link {
   background-color: #333;
+}
+
+body .content-container {
+  direction: ltr;
+}
+body .question-card .brand-logo {
+  margin-right: 18px;
+  margin-left: 0 !important;
+}
+body .question-card .green-check-mark-icon,
+body .question-card .x-icon {
+  left: auto !important;
+  right: -6px !important;
+}
+body .brand .brand-logo {
+  margin-right: 20px;
+  margin-left: 0;
+}
+body .question h1 {
+  padding-right: 40px;
+  padding-left: 0;
+}
+body .question .x-icon,
+body .question .green-check-mark-icon {
+  left: auto;
+  right: 0;
+}
+body .answer-list-item::after {
+  left: auto;
+  right: 20px;
+}
+body .what-is-your-mobile-number .x-icon,
+body .what-is-your-mobile-number .green-check-mark-icon {
+  left: auto !important;
+  right: 0;
+}
+body .what-is-your-mobile-number input.invalid {
+  padding-left: 0 !important;
+  padding-right: 44px;
+}
+body .tabs-bar .expired {
+  margin-right: 0;
+  margin-left: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
