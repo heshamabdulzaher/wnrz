@@ -5,6 +5,11 @@
 
     .brand-logo {
         margin-left: 20px;
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+        }
     }
 
     .brand-name-and-award {

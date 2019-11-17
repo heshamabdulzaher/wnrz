@@ -16,6 +16,7 @@ body {
   padding: 24px;
   max-width: 600px;
   margin: 0 auto;
+  direction: rtl;
 }
 
 h1 {
@@ -138,11 +139,13 @@ input[type=number] {
 .question-card .question .brand-logo {
   margin-left: 18px;
   position: relative;
-  min-width: 80px;
-  width: 80px !important;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+}
+.question-card .question .brand-logo img {
+  max-width: 100px;
+  max-height: 100px;
 }
 .question-card .question .brand-name {
   font-size: 14px;
@@ -285,6 +288,10 @@ input[type=number] {
 .brand .brand-logo {
   margin-left: 20px;
 }
+.brand .brand-logo img {
+  max-width: 100px;
+  max-height: 100px;
+}
 .brand .brand-name-and-award .brand-name {
   font-size: 24px;
   font-weight: normal;
@@ -368,7 +375,7 @@ input[type=number] {
   color: #ff4d00;
 }
 .award-modal .modal-content .award-img img {
-  max-width: 300px;
+  max-width: 100%;
   max-height: 400px;
 }
 .award-modal .modal-content .close {
