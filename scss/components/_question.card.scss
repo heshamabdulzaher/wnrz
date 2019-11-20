@@ -5,6 +5,15 @@
     padding: 20px;
     margin-bottom: 20px;
 
+    h1 {
+        font-size: 38px;
+        line-height: 46px;
+        padding-bottom: 20px;
+        padding-left: 32px;
+        border-bottom: 1px solid $grayBorder;
+        margin-bottom: 0;
+    }
+
     .question {
         display: flex;
         padding-top: 12px;
@@ -42,40 +51,37 @@
             right: auto;
         }
     }
+}
 
-    .details {
-        display: flex;
-        align-items: center;
-        padding-top: 12px;
-        justify-content: space-between;
+.question-details {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    justify-content: space-between;
 
-        >div {
-            p {
-                font-size: 13px;
-                line-height: 18px;
-                margin-bottom: 8px;
-            }
+    >div {
+        font-size: 15px;
+        color: $black333;
+        font-weight: 600;
 
-            .counter {
-                color: $black333;
-                font-size: 16px;
-                font-weight: bold;
-            }
-
-            em {
-                font-size: 14px;
-                font-weight: normal;
-                margin: 0 4px;
-                color: #5f697c;
-            }
-
+        p {
+            line-height: 18px;
+            margin-bottom: 8px;
         }
 
-        .main-btn {
-            width: auto;
-            padding: 0 20px;
-            height: 38px;
-            margin: 0;
+        em {
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0 4px;
+            color: #5f697c;
         }
+
+    }
+
+    .main-btn {
+        width: auto;
+        padding: 0 20px;
+        height: 38px;
+        margin: 0;
     }
 }
