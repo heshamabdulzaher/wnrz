@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <div class="notification-bar valid show">Your answer is correct ✔</div>
     <div class="header">
         <a href="./home.html" class="back-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="23" fill="none">
@@ -24,7 +25,7 @@
         </a>
         <div class="profile-avatar"><a href="./user-profile.html">AY</a></div>
     </div>
-    <section class="question-page content-container">
+    <section class="question-page content-container ltr-dir">
 
         <!-- Brand -->
         <div class="brand">
@@ -36,7 +37,25 @@
 
         <!-- Question -->
         <div class="question">
-            <h1 dir="auto">How many branches are there in Riyad?</h1>
+            <div class="question-box">
+                <h1 dir="auto">How many branches are there in Riyad?</h1>
+    
+                <!-- Details -->
+                <div class="details">
+                    <div>
+                        <p>Ranking</p>
+                        <div class="counter" dir="auto">10 <em>of</em> 30</div>
+                    </div>
+                    <div>
+                        <p>points</p>
+                        <div class="counter" dir="auto">311</div>
+                    </div>
+                    <div>
+                        <p>time left</p>
+                        <div class="counter" dir="auto">2 days</div>
+                    </div>
+                </div>
+            </div>
 
             <div class="green-check-mark-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none">
@@ -46,14 +65,8 @@
                 </svg>
             </div>
 
-            <!-- Answers -->
-            <ul>
-                <li class="answer-list-item selected correct">12</li>
-                <li class="answer-list-item disabled">15</li>
-                <li class="answer-list-item disabled">17</li>
-                <li class="answer-list-item disabled">7</li>
-            </ul>
         </div>
+        <!-- share question -->
         <button class="outline-btn">
             Share question
             <div class="icon">

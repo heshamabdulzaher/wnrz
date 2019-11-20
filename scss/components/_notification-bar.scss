@@ -1,0 +1,32 @@
+.notification-bar {
+    background-color: $darkGrayColor;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.16);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+
+    &.show {
+        animation: showNotificationBar .3s ease forwards;
+    }
+
+    &.valid {
+        background-color: $greenColor;
+    }
+
+    &.invalid {
+        background-color: $warningColor;
+    }
+}
+
+@keyframes showNotificationBar {
+    to {
+        transform: translateY(0);
+    }
+}

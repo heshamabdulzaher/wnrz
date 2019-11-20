@@ -1,5 +1,5 @@
 // Main container
-.content-container.ltr-dir {
+.content-container {
     direction: ltr;
 
     // Questioon card component
@@ -28,14 +28,14 @@
     .question {
 
         h1 {
-            padding-right: 40px;
+            padding-right: 32px;
             padding-left: 0;
         }
 
         .x-icon,
         .green-check-mark-icon {
             left: auto;
-            right: 0;
+            right: 8px;
         }
     }
 
