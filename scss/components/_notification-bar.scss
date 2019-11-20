@@ -16,6 +16,10 @@
         animation: showNotificationBar .3s ease forwards;
     }
 
+    &.hide {
+        animation: hideNotificationBar .3s ease forwards;
+    }
+
     &.valid {
         background-color: $greenColor;
     }
@@ -28,5 +32,11 @@
 @keyframes showNotificationBar {
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes hideNotificationBar {
+    to {
+        transform: translateY(-100%);
     }
 }

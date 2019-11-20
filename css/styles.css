@@ -401,6 +401,9 @@ input[type=number] {
 .notification-bar.show {
   animation: showNotificationBar 0.3s ease forwards;
 }
+.notification-bar.hide {
+  animation: hideNotificationBar 0.3s ease forwards;
+}
 .notification-bar.valid {
   background-color: #6ED300;
 }
@@ -411,6 +414,11 @@ input[type=number] {
 @keyframes showNotificationBar {
   to {
     transform: translateY(0);
+  }
+}
+@keyframes hideNotificationBar {
+  to {
+    transform: translateY(-100%);
   }
 }
 .home-page .say-welcome {
