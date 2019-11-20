@@ -1,5 +1,5 @@
 // Main container
-.content-container {
+.content-container.ltr-dir {
     direction: ltr;
 
     // Questioon card component
@@ -45,23 +45,6 @@
         &::after {
             left: auto;
             right: 20px;
-        }
-    }
-
-    // Mobile number page
-    .what-is-your-mobile-number {
-
-        .x-icon,
-        .green-check-mark-icon {
-            left: auto !important;
-            right: 0;
-        }
-
-        input {
-            &.invalid {
-                padding-left: 0 !important;
-                padding-right: 44px;
-            }
         }
     }
 

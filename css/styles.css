@@ -1,3 +1,40 @@
+@import './../css/antd.css';
+/* arabic */
+@font-face {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Tajawal Medium"), local("Tajawal-Medium"), url(https://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l8KiHrRpiYlJ.woff2) format("woff2");
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin */
+@font-face {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Tajawal Medium"), local("Tajawal-Medium"), url(https://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l8KiHrFpiQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* arabic */
+@font-face {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Tajawal Bold"), local("Tajawal-Bold"), url(https://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l4qkHrRpiYlJ.woff2) format("woff2");
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin */
+@font-face {
+  font-family: "Tajawal";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Tajawal Bold"), local("Tajawal-Bold"), url(https://fonts.gstatic.com/s/tajawal/v3/Iurf6YBj_oCad4k1l4qkHrFpiQ.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,6 +42,7 @@
   outline: 0;
   border: 0;
   font-family: "Tajawal", sans-serif;
+  font-weight: 500;
 }
 
 body {
@@ -585,6 +623,7 @@ input[type=number] {
   height: 40px;
   margin-bottom: 20px;
   position: relative;
+  direction: ltr;
 }
 .what-is-your-mobile-number .mobile-number-input img {
   border-radius: 6px;
@@ -603,7 +642,7 @@ input[type=number] {
 }
 .what-is-your-mobile-number .mobile-number-input input.invalid {
   color: #FF2943;
-  padding-left: 44px;
+  padding-right: 44px;
 }
 .what-is-your-mobile-number .mobile-number-input input.valid {
   color: green;
@@ -615,7 +654,7 @@ input[type=number] {
 .what-is-your-mobile-number .mobile-number-input .green-check-mark-icon {
   position: absolute;
   top: 5px;
-  left: 0;
+  right: 0;
 }
 .what-is-your-mobile-number .mobile-number-input .underline {
   width: 100%;
@@ -662,6 +701,7 @@ input[type=number] {
   padding: 30px 0 25px;
   display: flex;
   justify-content: space-evenly;
+  direction: ltr;
 }
 .sms-verification .sms-verification-code-boxs.invalid input {
   color: #FF2943;
@@ -716,45 +756,36 @@ input[type=number] {
   background-color: #333;
 }
 
-.content-container {
+.content-container.ltr-dir {
   direction: ltr;
 }
-.content-container .question-card .brand-logo {
+.content-container.ltr-dir .question-card .brand-logo {
   margin-right: 18px;
   margin-left: 0 !important;
 }
-.content-container .question-card .green-check-mark-icon,
-.content-container .question-card .x-icon {
+.content-container.ltr-dir .question-card .green-check-mark-icon,
+.content-container.ltr-dir .question-card .x-icon {
   left: auto !important;
   right: -6px !important;
 }
-.content-container .brand .brand-logo {
+.content-container.ltr-dir .brand .brand-logo {
   margin-right: 20px;
   margin-left: 0;
 }
-.content-container .question h1 {
+.content-container.ltr-dir .question h1 {
   padding-right: 32px;
   padding-left: 0;
 }
-.content-container .question .x-icon,
-.content-container .question .green-check-mark-icon {
+.content-container.ltr-dir .question .x-icon,
+.content-container.ltr-dir .question .green-check-mark-icon {
   left: auto;
   right: 8px;
 }
-.content-container .answer-list-item::after {
+.content-container.ltr-dir .answer-list-item::after {
   left: auto;
   right: 20px;
 }
-.content-container .what-is-your-mobile-number .x-icon,
-.content-container .what-is-your-mobile-number .green-check-mark-icon {
-  left: auto !important;
-  right: 0;
-}
-.content-container .what-is-your-mobile-number input.invalid {
-  padding-left: 0 !important;
-  padding-right: 44px;
-}
-.content-container .tabs-bar .expired {
+.content-container.ltr-dir .tabs-bar .expired {
   margin-right: 0;
   margin-left: 50%;
 }

@@ -19,6 +19,7 @@
     height: 40px;
     margin-bottom: 20px;
     position: relative;
+    direction: ltr;
 
     img {
       border-radius: 6px;
@@ -40,7 +41,7 @@
 
       &.invalid {
         color: $warningColor;
-        padding-left: 44px;
+        padding-right: 44px;
       }
 
       &.valid {
@@ -56,7 +57,7 @@
     .green-check-mark-icon {
       position: absolute;
       top: 5px;
-      left: 0;
+      right: 0;
     }
 
     .underline {
